@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>E-Commerce Store</h1>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-page="home">Home</a></li>
+                <li><a href="#" data-page="cart">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="home-page" class="page active">
+            <div class="products" id="products-container">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+
+        <div id="cart-page" class="page">
+            <h1>Shopping Cart</h1>
+            <div id="cart-container">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-total">
+                <h3 id="cart-total">Total: $0.00</h3>
+                <button class="btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="product-detail">
+                    <!-- Product details will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
